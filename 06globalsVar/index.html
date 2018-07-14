@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前端表单的制作</title>
+</head>
+<body>
+<form action="02.php" method="get">
+    <p>姓名：<input type="text" name="unsername"/></p>
+    <p>
+        性别：<input type="radio" name="sex" value="M" checked/> M
+        <input type="radio" name="sex" value="F"/> F
+    </p>
+    <p>兴趣：
+        <input type="checkbox" name="interest[]" value="coding"> coding
+        <input type="checkbox" name="interest[]" value="reading"> reading
+        <input type="checkbox" name="interest[]" value="shopping"> shopping
+    </p>
+    <p>地区：
+        <select name="area">
+            <option value="Moorabbin">Moorabbin</option>
+            <option value="Caulfield">Caulfield</option>
+            <option value="Clayton">Clayton</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="提交">
+    </p>
+</form>
+</body>
+</html>
